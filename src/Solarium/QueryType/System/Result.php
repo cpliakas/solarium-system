@@ -23,91 +23,258 @@ class Result extends BaseResult
     }
 
     /**
-     *
+     * @return string
      */
-    public function getArch()
+    public function getResponseHeaderStatus()
     {
-        return $this->returnProperty('arch');
+        return $this->returnProperty('ResponseHeaderStatus');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getBootclasspath()
+    public function getResponseHeaderQTime()
     {
-        return $this->returnProperty('bootclasspath');
+        return $this->returnProperty('ResponseHeaderQTime');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getClasspath()
+    public function getCoreSchema()
     {
-        return $this->returnProperty('classpath');
+        return $this->returnProperty('CoreSchema');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getSchema()
+    public function getCoreHost()
     {
-        return $this->returnProperty('schema');
+        return $this->returnProperty('CoreHost');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getDataDir()
+    public function getCoreNow()
     {
-        return $this->returnProperty('data');
+        return $this->returnProperty('CoreNow');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getIndexDir()
+    public function getCoreStart()
     {
-        return $this->returnProperty('index');
+        return $this->returnProperty('CoreStart');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getInstanceDir()
+    public function getCoreDirectoryInstance()
     {
-        return $this->returnProperty('instance');
+        return $this->returnProperty('CoreDirectoryInstance');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getMemoryFree()
+    public function getCoreDirectoryData()
     {
-        return $this->returnProperty('free');
+        return $this->returnProperty('CoreDirectoryData');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getMemoryMax()
+    public function getCoreDirectoryIndex()
     {
-        return $this->returnProperty('max');
+        return $this->returnProperty('CoreDirectoryIndex');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getMemoryTotal()
+    public function getLuceneSolrSpecVersion()
     {
-        return $this->returnProperty('total');
+        return $this->returnProperty('LuceneSolrSpecVersion');
     }
 
     /**
-     *
+     * @return string
      */
-    public function getMemoryUsed()
+    public function getLuceneSolrImplVersion()
     {
-        return $this->returnProperty('used');
+        return $this->returnProperty('LuceneSolrImplVersion');
     }
 
+    /**
+     * @return string
+     */
+    public function getLuceneSpecVersion()
+    {
+        return $this->returnProperty('LuceneSpecVersion');
+    }
+
+    /**
+     * @return string
+     */
+    public function getLuceneImplVersion()
+    {
+        return $this->returnProperty('LuceneImplVersion');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmVersion()
+    {
+        return $this->returnProperty('JvmVersion');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmName()
+    {
+        return $this->returnProperty('JvmName');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmProcessors()
+    {
+        return $this->returnProperty('JvmProcessors');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmMemoryFree()
+    {
+        return $this->returnProperty('JvmMemoryFree');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmMemoryTotal()
+    {
+        return $this->returnProperty('JvmMemoryTotal');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmMemoryMax()
+    {
+        return $this->returnProperty('JvmMemoryMax');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmMemoryUsed()
+    {
+        return $this->returnProperty('JvmMemoryUsed');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmJmxBootclasspath()
+    {
+        return $this->returnProperty('JvmJmxBootclasspath');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmJmxClasspath()
+    {
+        return $this->returnProperty('JvmJmxClasspath');
+    }
+
+    /**
+     * @return array
+     */
+    public function getJvmJmxCommandLineArgs()
+    {
+        return $this->returnProperty('JvmJmxCommandLineArgs');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmJmxStartTime()
+    {
+        return $this->returnProperty('JvmJmxStartTime');
+    }
+
+    /**
+     * @return string
+     */
+    public function getJvmJmxUpTimeMS()
+    {
+        return $this->returnProperty('JvmJmxUpTimeMS');
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemName()
+    {
+        return $this->returnProperty('SystemName');
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemVersion()
+    {
+        return $this->returnProperty('SystemVersion');
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemArch()
+    {
+        return $this->returnProperty('SystemArch');
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemLoadAverage()
+    {
+        return $this->returnProperty('SystemLoadAverage');
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemUname()
+    {
+        return $this->returnProperty('SystemUname');
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemUlimit()
+    {
+        return $this->returnProperty('SystemUlimit');
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemUptime()
+    {
+        return $this->returnProperty('SystemUptime');
+    }
 }
