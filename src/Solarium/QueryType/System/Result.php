@@ -25,22 +25,6 @@ class Result extends BaseResult
     /**
      * @return string
      */
-    public function getResponseHeaderStatus()
-    {
-        return $this->returnProperty('ResponseHeaderStatus');
-    }
-
-    /**
-     * @return string
-     */
-    public function getResponseHeaderQTime()
-    {
-        return $this->returnProperty('ResponseHeaderQTime');
-    }
-
-    /**
-     * @return string
-     */
     public function getCoreSchema()
     {
         return $this->returnProperty('CoreSchema');
@@ -143,7 +127,7 @@ class Result extends BaseResult
     }
 
     /**
-     * @return string
+     * @return int
      */
     public function getJvmProcessors()
     {
@@ -215,7 +199,7 @@ class Result extends BaseResult
     }
 
     /**
-     * @return string
+     * @return int
      */
     public function getJvmJmxUpTimeMS()
     {
@@ -247,7 +231,7 @@ class Result extends BaseResult
     }
 
     /**
-     * @return string
+     * @return float
      */
     public function getSystemLoadAverage()
     {

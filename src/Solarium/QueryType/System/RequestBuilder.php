@@ -21,6 +21,7 @@ class RequestBuilder extends BaseRequestBuilder
     {
         $request = parent::build($query);
         $request->addParam('wt', 'json');
+        $request->addParam('omitHeader', 'true');
         return $request;
     }
 }
