@@ -9,12 +9,18 @@ namespace Solarium\QueryType\System;
 use Solarium\Core\Query\Result\QueryType as BaseResult;
 
 /**
- * System query result.
+ * Result object for admin/system queries.
  */
 class Result extends BaseResult
 {
     /**
+     * Ensures the response is parsed and returns a property.
      *
+     * @param string $property
+     *   The name of the class member variable.
+     *
+     * @return mixed
+     *   The value of the property.
      */
     public function returnProperty($property)
     {
